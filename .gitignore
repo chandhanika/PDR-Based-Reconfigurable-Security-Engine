@@ -1,0 +1,35 @@
+# Vivado temporary files
+*.jou
+*.log
+*.str
+*.wdb
+*.wcfg
+*.dcp
+*.ltx
+*.rpt
+*.pb
+
+# Vivado generated directories
+.cache/
+.hw/
+.runs/
+.sim/
+.gen/
+.Xil/
+ip_user_files/
+
+# Temporary and backup files
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Sensitive local configuration
+.env
+.env.*

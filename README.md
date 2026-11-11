@@ -72,39 +72,53 @@ Power figures are Vivado estimates with low confidence, not physical measurement
 
 ## Repository Structure
 
-```text
+
 PDR-Based-Reconfigurable-Security-Engine/
 │
 ├── README.md
 ├── .gitignore
 │
 ├── dfx_project/
-│   ├── pdr.xpr
-│   ├── pdr.srcs/
-│   └── alternative_modules/
-│       ├── rm_checksum.v
-│       └── rm_rotate.v
+│   ├── rtl/
+│   │   ├── README.md
+│   │   ├── security_engine_top.v
+│   │   ├── rm_xor.v
+│   │   ├── rm_rotate.v
+│   │   └── rm_checksum.v
+│   │
+│   └── constraints/
+│       ├── README.md
+│       ├── pins.xdc
+│       └── floorplan.xdc
 │
 ├── conventional_project/
-│   ├── conv.xpr
-│   └── conv.srcs/
+│   ├── rtl/
+│   │   ├── README.md
+│   │   └── security_engine_conv.v
+│   │
+│   └── constraints/
+│       ├── README.md
+│       └── pins.xdc
 │
 ├── simulation/
+│   ├── README.md
 │   ├── tb_rm_xor.v
 │   ├── tb_rm_rotate.v
 │   ├── tb_rm_checksum.v
 │   └── tb_security_engine_top.v
 │
 ├── results/
-│   ├── experimental_results.md
-│   └── bitstreams/
-│       ├── full_xor.bit
-│       ├── part_xor.bit
-│       ├── part_rotate.bit
-│       └── part_checksum.bit
+│   └── experimental_results.md
 │
 └── docs/
-```
+    └── README.md
+
+Release assets (tag: v1.0):
+    ├── full_xor.bit
+    ├── part_xor.bit
+    ├── part_rotate.bit
+    └── part_checksum.bit
+
 
 ## Opening the Project
 
